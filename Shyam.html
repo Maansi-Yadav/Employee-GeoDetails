@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryush Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+        #Information{
+            margin-right: 40vw;
+            margin-left: 40vw;
+        }
+        #map{
+            height: 800px;
+            width: 100%;
+            /* margin-left: 20vw;z
+            margin-right: 20vw; */
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="nav">
+            <div>
+                <p><a href="index.html">Home</a></p>
+            </div>
+            <ul class="nav-bar">
+                <li>Login</li>
+                <li>Contact Us</li>
+                <li>Sign up</li>
+            </ul>
+        </div>
+        <div class="head">
+            <h3>Digital Experience with Capace Software</h3>
+        </div>
+        <div class="header-image">
+            <img src="https://cdn.pixabay.com/photo/2016/10/11/21/43/geometric-1732847__340.jpg" alt="">
+        </div>
+    </header>
+        <div id="Information">
+            <h1><centre>Information of Shyam</centre></h1>
+            
+            <p><b>Name:</b> Shyam</strong></p>
+            <p><b>E-Mail:</b> shyam@gmail.com</p>
+            <p><b>Created At:</b> 2020-07-02 12:03:08</strong></p>
+            
+       </div>>
+       <div id="map"></div>
+        <script>
+            function initMap() {
+                var center = {lat: 22.719568, lng:75.857727};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: center
+        });
+        var marker = new google.maps.Marker({
+          position: center,
+          map: map
+        });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDF81DH6VVPskZ7nmv1U1-RmmfPecitp8&callback=initMap">
+    </script>
+
+</div>
+    <footer>
+        <code>
+            Made for Capace Softwares BY MANSI YADAV Rajkiya Engineering College Azamgarh
+        </code>    
+    </footer>
+    
+</body>
+</html>
